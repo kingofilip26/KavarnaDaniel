@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavárna Daniel</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food">
+    <meta name="description" content="This is a Restaurant html remplate made by codewithsadee">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+<link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+<link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+</head>
+<body id="top">
+    
+    <div class="preload" data-preload>
+        <div class="circle"></div>
+        <p class="text">Kavárna Daniel</p>
+    </div>
+
+<div class="topbar">
+    <div class="container">
+        <address class="topbar-item">
+            <div class="icon">
+                <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">
+                Žerotínova 1230/1, Ostrava, Czech Republic
+            </span>
+        </address>
+
+        <div class="separator"></div>
+        <div class="topbar-item item-2">
+            <div class="icon">
+                <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">
+                Denně : 13:00 - 22.00
+            </span>
+        </div>
+        <a href="tel:11234567890" class="topbar-item link">
+            <div class="icon">
+                <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">+420 775 434 162</span>
+        </a>
+        <div class="separator"></div>
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
+            <div class="icon">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+            <span class="span">danielskeril@centrum.cz</span>
+        </a>
+    </div>
+</div>
+
+<header class="header" data-header>
+    <div class="container">
+        <a class="logo" href="#">
+            <img class="logoa" src="logo.jpg" width="160" height="50" alt="Grilli - Home">
+        </a>
+        <nav class="navbar" data-navbar>
+            <button class="close-btn" aria-label="close menu" data-nav-toggler>
+                <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+            <a class="logo" href="#">
+                <img class="logoa" src="logo.jpg" width="160" height="50" alt="Grilli - Home">
+            </a>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+                <div class="span">Domů</div>
+            </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-link hover-underline">
+                        <div class="separator"></div>
+                        <div class="span">Menu</div>
+                    </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link hover-underline">
+                                <div class="separator"></div>
+                                <div class="span">O Nás</div>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#home" class="navbar-link hover-underline">
+                                <div class="separator"></div>
+                                <div class="span">Galerie</div>
+                            </a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#home" class="navbar-link hover-underline">
+                                        <div class="separator"></div>
+                                        <div class="span">Kontakty</div>
+                                    </a>
+                                        </li>
+                
+            </ul>
+
+            <div class="text-center">
+                <p class="headline-1 navbar-title">Navštiv nás</p>
+
+                <address class="body-4">Žerotínova 1230/1, Ostrava, Czech Republic</address>
+
+                <p class="body-4 navbar-text">Otveřeno: 13:00 - 22:00</p>
+                <a href="mailto:booking@grilli.com" class="body-4 sidebar-link">danielskeril@centrum.cz</a>
+                <div class="separator"></div>
+                <p class="contact-label">Zavolej</p>
+                <a href="tel:88123123456" class="body-1 contact-number hover-underline">
+                    775 434 162
+                </a>
+            </div>
+        </nav>
+
+        <a href="#" class="btn btn-secondary btnHeader">
+            <span class="text text-1">Rezervace</span>
+            <span class="text text-2"aria-hidden="true">Rezervace</span>                             
+        </a>
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+        <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+</header>
+
+<main>
+    <article>
+
+
+        <section class="hero text-center" aria-label="home" id="home">
+            <ul class="hero-slide" data-hero-slider>
+                <li class="slider-item active" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img class="img-cover cover2" src="prostor10.png" width="1880" height="950" alt="">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Pohoda & Klid</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Kavárna Daniel
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">Přijď si užít klid a pohodu</p>
+
+                    <a href="" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Naše Nabídka</span>
+                        <span class="text text-2" aria-hidden="true">Naše Nabídka</span>
+                    </a>
+                </li>
+                <li class="slider-item active" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img class="img-cover cover2" src="prostor9.png" width="1880" height="950" alt="">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Radost & Smích</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                        Kavárna Daniel
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">Vychutnej si naše dobroty</p>
+
+                    <a href="" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Naše Nabídka</span>
+                        <span class="text text-2" aria-hidden="true">Naše Nabídka</span>
+                    </a>
+                </li>
+                <li class="slider-item active" data-hero-slider-item>
+                    <div class="slider-bg">
+                        <img class="img-cover cover2" src="prostor12.webp" width="1880" height="950" alt="">
+                    </div>
+                    <p class="label-2 section-subtitle slider-reveal">Úžasná & perfektní</p>
+
+                    <h1 class="display-1 hero-title slider-reveal">
+                       Kavárna Daniel
+                    </h1>
+
+                    <p class="body-2 hero-text slider-reveal">Příjď za naší jedinečnou atmosférou</p>
+
+                    <a href="" class="btn btn-primary slider-reveal">
+                        <span class="text text-1">Naše Nabídka</span>
+                        <span class="text text-2" aria-hidden="true">Naše Nabídka</span>
+                    </a>
+                </li>
+            </ul>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+                <ion-icon name="chevron-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+                <ion-icon name="chevron-forward"></ion-icon>
+            </button>
+
+            <a href="" class="hero-btn has-after">
+                <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+                <span class="label-2 text-center span">Zavolej Nám</span>
+            </a>
+
+
+        </section>
+
+
+
+
+        <section class="section service bg-black-10 text-center" aria-label="service">
+            <div class="container">
+                <p class="section-subtitle label-2">Naše Nabídka</p>
+                <h2 class="headline-1 section-title">Nabízíme chutné dobroty</h2>
+
+                <p class="section-text">Přijď k nám si vychutnat naši kávu, dorty, zákusky</p>
+
+                <ul class="grid-list">
+                    <li>
+                        <div class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width:285; --height:336;">
+                                    <img src="img1.webp" loading="lazy" width="285" height="336" alt="Breakfast" class="img-cover">
+                                </figure>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">Kávy</a>
+                                </h3>
+
+                                <a href="" class="btn-text hover-underline label-2">Naše Nabídka</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width:285 ; --height:336 ;">
+                                    <img src="img2.webp" loading="lazy" width="285" height="336" alt="Appetizers" class="img-cover">
+                                </figure>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">Ledové Kávy</a>
+                                </h3>
+
+                                <a href="" class="btn-text hover-underline label-2">Naše Nabídka</a>
+                            </div>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-card">
+                            <a href="#" class="has-before hover:shine">
+                                <figure class="card-banner img-holder" style="--width:285 ; --height:336 ;">
+                                    <img src="img3.webp" loading="lazy" width="285" height="336" alt="Drinks" class="img-cover">
+                                </figure>
+                            </a>
+
+                            <div class="card-content">
+                                <h3 class="title-4 card-title">
+                                    <a href="#">Limonády</a>
+                                </h3>
+
+                                <a href="" class="btn-text hover-underline label-2">Naše Nabídka</a>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape" class="shape shape-1 move-anim">
+                <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+            </div>
+        </section>
+        <section id="onas">
+            <h2 class="nadpis">O Nás</h2>
+            <div class="cara"></div>
+            <div class="onas-container">
+                <figure class="onas-figure sekce">
+                    <img src="logo.jpg" alt="" class="onas-image">
+                </figure>
+                <div class="onas-text sekce">
+                    
+                    <p class="onas-para">Provozujeme kavárnu s cukrárnou. Nabízíme teplé a studené nápoje či dorty a zákusky.* Mimořádně krásná a útulná kavárna v srdci Ostravy
+                        * Kavárna se nachází ve druhém patře a je docela ukryta, co se označení týká. Mezi Ostravany je však de facto legendární.
+                        * Nabízí velmi příjemné tiché prostředí u pohodové hudby.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="menu">
+            <h2 class="nadpis">Naše Nabídka</h2>
+            <div class="cara"></div>
+            <div class="menu-container">
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img4.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Dorty</h3>
+                        <p class="menu-para">Široký výběr dortů, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img5.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Zákusky</h3>
+                        <p class="menu-para">Široký výběr zákusků, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img6.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Sladké dobroty</h3>
+                        <p class="menu-para">Široký výběr sladkých dobrot, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img7.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Dorty</h3>
+                        <p class="menu-para">Široký výběr dortů, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img8.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Zákusky</h3>
+                        <p class="menu-para">Široký výběr zákusků, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+                <div class="menu-blok sekce">
+                    <figure class="menu-figure">
+                        <img src="img9.webp" alt="" class="menu-image">
+                    </figure>
+                    <div class="menu-text">
+                        <h3 class="menu-h3">Sladké dobroty</h3>
+                        <p class="menu-para">Široký výběr sladkých dobrot, které ti dopřejí skvělou chuť a zdravou energii.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="dorty">
+            <h2 class="nadpis">Naše Prostory</h2>
+            <div class="cara"></div>
+           <div class="fullImgBox" id="fullImgBox">
+            <img src="" alt="" id="fullImg">
+            <span onclick="closeFullImg()">x</span>
+           </div>
+            <div class="dorty-container">
+                <figure class="dorty-figure sekce">
+                    <img src="prostor1.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor2.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                   
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor3.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor4.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor6.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor7.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor8.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor9.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor10.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor11.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor12.webp" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor13.webp" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor14.webp" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor15.webp" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor16.webp" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+                <figure class="dorty-figure sekce">
+                    <img src="prostor1.png" alt="" class="dorty-image" onclick="openFullImg(this.src)">
+                    
+                </figure>
+            </div>
+        </section>
+        
+        
+        <section id="hodnoceni">
+            <h2 class="nadpis">Naše Hodnocení</h2>
+            <div class="cara"></div>
+            <div class="hodnoceni-container sekce">
+                <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="hodnoceni-blok">
+                                <figure class="hodnoceni-figure">
+                                    <img src="user-1.jpg" alt="" class="hodnoceni-image">
+                                </figure>
+                                <div class="hodnoceni-text">
+                                    <h3 class="hodnoceni-h3">Veronika Hustopecká</h3>
+                                    <p class="hodnoceni-para">"Milá obsluha a moc dobrá káva, v centru Ostravy, v létě krásný výhled z terasy 😊"</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hodnoceni-blok">
+                                <figure class="hodnoceni-figure">
+                                    <img src="user-2.jpg" alt="" class="hodnoceni-image">
+                                </figure>
+                                <div class="hodnoceni-text">
+                                    <h3 class="hodnoceni-h3">Tomáš Harazim</h3>
+                                    <p class="hodnoceni-para">"​Kousek historie v srdci Ostravy! ☕️ Kavárna Daniel nás naprosto dostala. Neuvěřitelná atmosféra a pan majitel? Neuvěřitelně milý a ochotný člověk."</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hodnoceni-blok">
+                                <figure class="hodnoceni-figure">
+                                    <img src="user-3.jpg" alt="" class="hodnoceni-image">
+                                </figure>
+                                <div class="hodnoceni-text">
+                                    <h3 class="hodnoceni-h3">Mirek T.</h3>
+                                    <p class="hodnoceni-para">"Vřele doporučuji. Objednával jsem zákusky na oslavu, vypadaly krásně a taky skvěle chutnaly."</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hodnoceni-blok">
+                                <figure class="hodnoceni-figure">
+                                    <img src="user-5.jpg" alt="" class="hodnoceni-image">
+                                </figure>
+                                <div class="hodnoceni-text">
+                                    <h3 class="hodnoceni-h3">Tomáš Lecián</h3>
+                                    <p class="hodnoceni-para">"Příjemná kavárna s výbornou kávou. Doporučuji navštívit 👌"</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        </div>
+                        
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    
+                       
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                    <a target="_blank" class="hodnoceni-button" href="https://www.google.com/search?sa=X&sca_esv=c6248b2763fb578a&hl=cs-CZ&sxsrf=APpeQns49mCYpjdeCiokzHLuTGIkasNf-g:1784506509190&q=Kav%C3%A1rna+Daniel+Recenze&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDMxNDUwsjQ0MjWzMDQyMbI0t9zAyPiKUdw7sezwwqK8RAWXxLzM1ByFoNTk1Lyq1EWsuGQAWuVdrU8AAAA&rldimm=16415029125681242979&tbm=lcl&ved=2ahUKEwiKk9Hk_N-VAxX3CRAIHfyoIksQ9fQKegQITRAG&biw=1920&bih=953&dpr=1#lkt=LocalPoiReviews">Všechny hodnocení</a>
+            </div>
+            
+        </section>
+        
+        <section id="galerie">
+            <h2 class="nadpis">Galerie</h2>
+            <div class="cara"></div>
+            <div class="fullImgBox" id="fullImgBox">
+                <img src="" alt="" id="fullImg">
+                <span onclick="closeFullImg()">x</span>
+            </div>
+            <div class="galerie-container">
+                <figure class="galerie-figure sekce">
+                    <img src="img1.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img2.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img3.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img4.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img5.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img6.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img7.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img8.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img9.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img10.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img11.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img12.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img13.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img14.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img15.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+                <figure class="galerie-figure sekce">
+                    <img src="img16.webp" alt="" class="galerie-image" onclick="openFullImg(this.src)">
+                </figure>
+               
+            </div>
+        </section>
+        
+        
+        <section id="banner">
+            <div class="banner-container">
+               <img src="img1.webp" alt="" class="banner-image">
+               <img src="img2.webp" alt="" class="banner-image">
+               <img src="img3.webp" alt="" class="banner-image">
+               <img src="img4.webp" alt="" class="banner-image">
+               <img src="img5.webp" alt="" class="banner-image">
+               <img src="img6.webp" alt="" class="banner-image">
+               <img src="img7.webp" alt="" class="banner-image">
+               <img src="img8.webp" alt="" class="banner-image">
+               <img src="img9.webp" alt="" class="banner-image">
+               <img src="img10.webp" alt="" class="banner-image">
+
+               <img src="img1.webp" alt="" class="banner-image">
+               <img src="img2.webp" alt="" class="banner-image">
+               <img src="img3.webp" alt="" class="banner-image">
+               <img src="img4.webp" alt="" class="banner-image">
+               <img src="img5.webp" alt="" class="banner-image">
+               <img src="img6.webp" alt="" class="banner-image">
+               <img src="img7.webp" alt="" class="banner-image">
+               <img src="img8.webp" alt="" class="banner-image">
+               <img src="img9.webp" alt="" class="banner-image">
+               <img src="img10.webp" alt="" class="banner-image">
+        
+               
+        
+              
+            </div>
+        </section>
+        
+        
+        <section id="kontakty">
+            <h2 class="nadpis">Kde Nás Najdete</h2>
+            <div class="cara"></div>
+            <div class="kontakty-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.027067506876!2d18.28157047690955!3d49.838991531200826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e324b6f1ed91%3A0xe3cde604edebe363!2sKav%C3%A1rna%20Daniel!5e1!3m2!1scs!2scz!4v1784505816743!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                
+               
+               
+            </div>
+        </section>
+        
+       
+
+        
+
+    </article>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer section has-bg-image text-center" style="background-image:url('./assets/images/footer-bg.jpg') ;">
+    <div class="container">
+        <div class="footer-top grid-list">
+            <div class="footer-brand has-before has-after">
+                <a class="logo" href="#">
+                    <img src="logo.jpg" width="160" height="50" loading="lazy" alt="grilli home">
+                </a>
+                <address class="body-4">
+                    Žerotínova 1230/1, Ostrava, Czech Republic
+                </address>
+                <a href="mailto:booking@grilli.com" class="body-4 contact-link">danielskeril@centrum.cz</a>
+
+                <a href="tel:88123123456" class="body-4 contact-link">Zavolej : 775 434 162</a>
+                <p class="body-4">Otevřeno : 13:00 - 22:00</p>
+                <div class="wrapper">
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                    <div class="separator"></div>
+                </div>
+                
+               
+                <form action="" class="input-wrapper">
+                    <div class="icon-wrapper">
+                        <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                        <input type="email" name="email-address" placeholder="Email" autocomplete="off" class="input-field">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">
+                        <span class="text text-1">Odeslat</span>
+                        <span class="text text-2" aria-hidden="true">Odeslat</span>
+                    </button>
+                </form>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Domů</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Menu</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">O Nás</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Galerie</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Kontakty</a>
+                </li>
+                
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Facebook</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Instagram</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Twitter</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Youtube</a>
+                </li>
+                <li>
+                    <a href="" class="label-2 footer-link hover-underline">Google Mapy</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2026 | Vytvořil <a target="_blank" href="https://github.com/codewithsadee" class="link">Filip Jiřík</a></p>
+        </div>
+    </div>
+</footer>
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
